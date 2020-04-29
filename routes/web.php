@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'ReportsController@index');
+Route::get('downloadData/{type}', 'ReportsController@downloadData');
+Route::post('importData', 'ReportsController@importData');
