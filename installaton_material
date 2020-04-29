@@ -1,0 +1,15 @@
+CREATE DATABASE 'nswrep';
+CREATE USER 'nswadmin'@'localhost' IDENTIFIED BY 'nswpassword1*';
+GRANT ALL PRIVILEGES ON *.* TO 'nswadmin'@'localhost' IDENTIFIED BY 'nswpassword1*';
+
+
+--------------------------------------------------------------------------------------
+echo "# nswsireport" >> README.md
+git init
+git add README.md
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/naveen-verma/nswsireport.git
+git push -u origin master
+
+
